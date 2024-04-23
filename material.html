@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ender.ing</title>
+    <script src="./web/client/@material/TEMP-landpage.js"></script>
+    <link rel="stylesheet" href="./web/client/material/colors.css" />
+    <link rel="stylesheet" href="./web/client/material/theme.css" />
+    <script src="./web/client/material/colors.js"></script>
+    <link rel="stylesheet" href="./web/client/material/icons.css" />
+    <link rel="stylesheet" href="./web/client/material/font.css" />
+
+    <style>
+        /* Usage in custom components */
+        .primary {
+            background: var(--md-sys-color-primary);
+            color: var(--md-sys-color-on-primary);
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <md-text-button trailing-icon onclick="window.open('https://www.paypal.com/donate/?hosted_button_id=66RRY5GH48Y8G')">
+        Donate
+        <md-icon slot="icon">open_in_new</md-icon>
+    </md-text-button>
+
+    <br>
+
+    <md-icon style="margin: 18px; margin-bottom: 6px;--size: 48px; font-size: var(--size); width: var(--size); height: var(--size);">waving_hand</md-icon>
+
+    <h1 style="margin-left: 18px">Welcome to ender.ing!</h1>
+    <text style="margin-left: 18px">We have yet to do any real work here, please come by later!</text>
+
+    <md-divider inset style="margin: 12px auto"></md-divider>
+
+    <md-text-button trailing-icon onclick="window.open('https://github.com/Ender-ing')" style="margin: auto 4px">
+        GitHub
+        <md-icon slot="icon">open_in_new</md-icon>
+    </md-text-button>
+
+    <md-outlined-button role="presentation" onclick="window.open('mailto:admin@ender.ing')" style="margin: auto 4px">
+        Contact me
+        <md-icon slot="icon">mail</md-icon>
+    </md-outlined-button>
+
+    <br />
+
+
+
+    <form action="https://www.paypal.com/donate" method="post" target="_top">
+        <input type="hidden" name="hosted_button_id" value="66RRY5GH48Y8G" />
+        <input type="image" src="https://www.paypalobjects.com/en_US/IL/i/btn/btn_donateCC_LG.gif" border="0"
+            name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+        <img alt="" border="0" src="https://www.paypal.com/en_IL/i/scr/pixel.gif" width="1" height="1" />
+    </form>
+
+    </br>
+    <text>https://github.com/material-components/material-web/blob/main/docs/components/chip.md</text>
+    <md-chip-set>
+        <md-input-chip label="Input"></md-input-chip>
+        <md-assist-chip label="Add to calendar">
+            <md-icon slot="icon">event</md-icon>
+        </md-assist-chip>
+        <md-input-chip label="Ping Qiang" avatar>
+            <img slot="icon">
+        </md-input-chip>
+        <md-suggestion-chip label="Share" elevated></md-suggestion-chip>
+        <md-suggestion-chip label="Favorite" elevated></md-suggestion-chip>
+        <md-assist-chip label="Copy" disabled always-focusable></md-assist-chip>
+        <md-assist-chip label="Paste" disabled always-focusable></md-assist-chip>
+        <md-assist-chip label="Add to my itinerary">
+            <md-icon slot="icon">calendar</md-icon>
+        </md-assist-chip>
+        <md-assist-chip label="12 mins from hotel">
+            <md-icon slot="icon">map</md-icon>
+        </md-assist-chip>
+        <md-filter-chip label="Sheets" selected></md-filter-chip>
+        <md-filter-chip label="Images"></md-filter-chip>
+        <md-filter-chip label="Emails" selected disabled></md-filter-chip>
+        <md-filter-chip label="Docs" disabled></md-filter-chip>
+        <md-filter-chip label="Red" removable selected></md-filter-chip>
+        <md-filter-chip label="Yellow" removable></md-filter-chip>
+        <md-filter-chip label="Green" removable selected disabled></md-filter-chip>
+        <md-filter-chip label="Blue" removable disabled></md-filter-chip>
+        <md-input-chip label="Remove Only!" remove-only></md-input-chip>
+        <md-suggestion-chip label="Looks good to me"></md-suggestion-chip>
+        <md-suggestion-chip label="I agree" disabled></md-suggestion-chip>
+
+    </md-chip-set>
+
+    <br />
+    <text>https://github.com/material-components/material-web/blob/main/docs/components/checkbox.md</text>
+
+    <md-checkbox touch-target="wrapper"></md-checkbox>
+    <md-checkbox touch-target="wrapper" checked></md-checkbox>
+    <md-checkbox touch-target="wrapper" indeterminate></md-checkbox>
+    <label>
+        <md-checkbox touch-target="wrapper"></md-checkbox>
+        Checkbox one
+    </label>
+
+    <md-checkbox id="checkbox-two" touch-target="wrapper"></md-checkbox>
+    <label for="checkbox-two">Checkbox two</label>
+
+    <br />
+    <text>https://github.com/material-components/material-web/blob/main/docs/components/button.md</text>
+
+    <md-outlined-button>Back</md-outlined-button>
+    <md-filled-button>Complete</md-filled-button>
+
+    <md-filled-tonal-button>
+        Send
+        <svg slot="icon" viewBox="0 0 48 48">
+            <path d="M6 40V8l38 16Zm3-4.65L36.2 24 9 12.5v8.4L21.1 24 9 27Zm0 0V12.5 27Z" />
+        </svg>
+    </md-filled-tonal-button>
+
+    <md-text-button trailing-icon>
+        Open
+        <svg slot="icon" viewBox="0 0 48 48">
+            <path
+                d="M9 42q-1.2 0-2.1-.9Q6 40.2 6 39V9q0-1.2.9-2.1Q7.8 6 9 6h13.95v3H9v30h30V25.05h3V39q0 1.2-.9 2.1-.9.9-2.1.9Zm10.1-10.95L17 28.9 36.9 9H25.95V6H42v16.05h-3v-10.9Z" />
+        </svg>
+    </md-text-button>
+
+    <md-elevated-button>Elevated</md-elevated-button>
+    <md-filled-button>Filled</md-filled-button>
+    <md-filled-tonal-button>Tonal</md-filled-tonal-button>
+    <md-outlined-button>Outlined</md-outlined-button>
+    <md-text-button>Text</md-text-button>
+
+    <br />
+    <text>https://github.com/material-components/material-web/blob/main/docs/components/dialog.md</text>
+
+    <md-dialog>
+        <div slot="headline">
+            Dialog title
+        </div>
+        <form slot="content" id="form-id" method="dialog">
+            A simple dialog with free-form content.
+        </form>
+        <div slot="actions">
+            <md-text-button form="form-id">Ok</md-text-button>
+        </div>
+    </md-dialog>
+
+    <md-dialog>
+        <div slot="content">
+            A dialog that is opened by default.
+        </div>
+    </md-dialog>
+
+    <md-dialog>
+        <form slot="content" id="form-id-2" method="dialog">...</form>
+        <div slot="actions">
+            <md-text-button form="form-id-2" value="cancel">Cancel</md-text-button>
+            <md-text-button form="form-id-2" value="ok">Ok</md-text-button>
+        </div>
+    </md-dialog>
+
+    <md-dialog id="test" type="alert">
+        <div slot="headline">Confirm deletion</div>
+        <form slot="content" id="form-id-3" method="dialog">
+            Are you sure you wish to delete this item?
+        </form>
+        <div slot="actions">
+            <md-text-button form="form-id-3" value="cancel">Cancel</md-text-button>
+            <md-text-button form="form-id-3" value="delete">Delete</md-text-button>
+        </div>
+    </md-dialog>
+    <script async>
+        // Fix Dialog scrollbar
+        // Use SolidJS to fix this...
+        function updateHostScrollbar(host){
+            var sheet = new CSSStyleSheet(); // Define this sheet only once in SolidJS!
+            // You could probably make use of "CSSStyleSheet" a lot of make loading time faster in SolidJS!
+            sheet.replaceSync(
+`/* Style scrollbars */
+*::-webkit-scrollbar {
+    width: 17px;
+}
+
+*::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+    background: var(--md-sys-color-surface-container-highest);
+}
+
+*::-webkit-scrollbar-thumb:hover {
+    background: var(--md-sys-color-secondary-container);
+}`
+            );
+            host.shadowRoot.adoptedStyleSheets.push(sheet);
+        }
+        let dialogElm = document.getElementById("test");
+        updateHostScrollbar(dialogElm);
+        setTimeout(() => dialogElm.open = true, 0);
+    </script>
+
+
+
+    <br />
+    <text>https://github.com/material-components/material-web/blob/main/docs/components/divider.md</text>
+
+    <section>
+        <p>Lorem ipsum...</p>
+        <md-divider></md-divider>
+        <p>Lorem ipsum...</p>
+    </section>
+    <section>
+        <p>Material 2</p>
+        <md-divider inset></md-divider>
+        <p>Material 3</p>
+    </section>
+    <section>
+        <p>Material 2</p>
+        <md-divider inset-start></md-divider>
+        <p>Material 3</p>
+    </section>
+
+    <br />
+    <text>https://github.com/material-components/material-web/blob/main/docs/components/elevation.md</text>
+
+    <style>
+        .surface,
+        .surface2 {
+            position: relative;
+            border-radius: 16px;
+            height: 64px;
+            width: 64px;
+
+            --md-elevation-level: 3;
+        }
+    </style>
+    <div class="surface">
+        <md-elevation></md-elevation>
+        <!-- Content -->
+    </div>
+
+    <style>
+        .surface2 {
+
+            transition-duration: 250ms;
+            transition-timing-function: ease-in-out;
+
+            --md-elevation-level: 3;
+        }
+
+        .surface2:hover {
+            --md-elevation-level: 0;
+        }
+    </style>
+    <div class="surface2">
+        <md-elevation></md-elevation>
+        <!-- Content -->
+    </div>
+
+    <style>
+        .surface3 {
+            position: relative;
+            border-radius: 16px;
+            height: 64px;
+            width: 64px;
+        }
+
+        .surface3 {
+            --md-elevation-level: 5;
+            --md-sys-color-shadow: red;
+        }
+    </style>
+    <div class="surface3">
+        <md-elevation></md-elevation>
+        <!-- Content -->
+    </div>
+
+    <br />
+    <text>https://github.com/material-components/material-web/blob/main/docs/components/fab.md</text>
+
+    <md-fab aria-label="Edit">
+        <md-icon slot="icon">edit</md-icon>
+    </md-fab>
+
+    <md-fab lowered aria-label="Edit">
+        <md-icon slot="icon">edit</md-icon>
+    </md-fab>
+
+    <md-fab label="Edit">
+        <md-icon slot="icon">edit</md-icon>
+    </md-fab>
+
+    <md-fab label="Reroute"></md-fab>
+
+
+    <md-fab variant="primary" aria-label="Edit">
+        <md-icon slot="icon">edit</md-icon>
+    </md-fab>
+    <md-fab variant="secondary" aria-label="Edit">
+        <md-icon slot="icon">edit</md-icon>
+    </md-fab>
+    <md-fab variant="tertiary" aria-label="Edit">
+        <md-icon slot="icon">edit</md-icon>
+    </md-fab>
+
+    <md-fab size="small" touch-target="none" aria-label="Edit">
+        <md-icon slot="icon">edit</md-icon>
+    </md-fab>
+    <md-fab size="small" aria-label="Edit">
+        <md-icon slot="icon">edit</md-icon>
+    </md-fab>
+    <md-fab aria-label="Edit">
+        <md-icon slot="icon">edit</md-icon>
+    </md-fab>
+    <md-fab size="large" aria-label="Edit">
+        <md-icon slot="icon">edit</md-icon>
+    </md-fab>
+
+    <md-branded-fab size="small" aria-label="Add">
+        <svg slot="icon" viewBox="0 0 36 36">
+            <path fill="#34A853" d="M16 16v14h4V20z"></path>
+            <path fill="#4285F4" d="M30 16H20l-4 4h14z"></path>
+            <path fill="#FBBC05" d="M6 16v4h10l4-4z"></path>
+            <path fill="#EA4335" d="M20 16V6h-4v14z"></path>
+            <path fill="none" d="M0 0h36v36H0z"></path>
+        </svg>
+    </md-branded-fab>
+
+    <md-branded-fab label="Add">
+        <svg slot="icon" viewBox="0 0 36 36">
+            <path fill="#34A853" d="M16 16v14h4V20z"></path>
+            <path fill="#4285F4" d="M30 16H20l-4 4h14z"></path>
+            <path fill="#FBBC05" d="M6 16v4h10l4-4z"></path>
+            <path fill="#EA4335" d="M20 16V6h-4v14z"></path>
+            <path fill="none" d="M0 0h36v36H0z"></path>
+        </svg>
+    </md-branded-fab>
+
+    <md-branded-fab aria-label="Add">
+        <svg slot="icon" viewBox="0 0 36 36">
+            <path fill="#34A853" d="M16 16v14h4V20z"></path>
+            <path fill="#4285F4" d="M30 16H20l-4 4h14z"></path>
+            <path fill="#FBBC05" d="M6 16v4h10l4-4z"></path>
+            <path fill="#EA4335" d="M20 16V6h-4v14z"></path>
+            <path fill="none" d="M0 0h36v36H0z"></path>
+        </svg>
+    </md-branded-fab>
+    <md-branded-fab size="large" aria-label="Add">
+        <svg slot="icon" viewBox="0 0 36 36">
+            <path fill="#34A853" d="M16 16v14h4V20z"></path>
+            <path fill="#4285F4" d="M30 16H20l-4 4h14z"></path>
+            <path fill="#FBBC05" d="M6 16v4h10l4-4z"></path>
+            <path fill="#EA4335" d="M20 16V6h-4v14z"></path>
+            <path fill="none" d="M0 0h36v36H0z"></path>
+        </svg>
+    </md-branded-fab>
+
+    <br />
+    <text>https://github.com/material-components/material-web/blob/main/docs/components/focus-ring.md</text>
+
+    <div style="position: relative">
+        <md-focus-ring id="ring" style="--md-focus-ring-shape: 8px"></md-focus-ring>
+        <button id="ring-control"></button>
+    </div>
+    <script>
+        const focusRing = document.querySelector('#ring');
+        const control = document.querySelector('#ring-control');
+        focusRing.attach(control);
+    </script>
+
+    <br />
+    <text>LABS NAV-DRAWER & NAV-BAR</text>
+    <!--<md-navigation-drawer>
+        <navigation-drawer-modal></navigation-drawer-modal>
+    </md-navigation-drawer>
+    <md-navigation-bar></md-navigation-bar>-->
+    <br />
+    <text>[URL]</text>
+
+    <br />
+    <text>[URL]</text>
+
+    <br />
+    <text>[URL]</text>
+
+    <br />
+    <text>[URL]</text>
+
+    <br />
+    <text>[URL]</text>
+
+    <br />
+    <text>[URL]</text>
+
+    <br />
+    <text>[URL]</text>
+
+    <br />
+    <text>[URL]</text>
+
+    <br />
+    <text>[URL]</text>
+
+    <br />
+    <text>[URL]</text>
+
+    <br />
+    <text>[URL]</text>
+
+    <br />
+    <text>[URL]</text>
+
+    <br />
+    <text>[URL]</text>
+
+    <br />
+    <text>[URL]</text>
+
+    <br />
+    <text>[URL]</text>
+
+    <br />
+    <text>[URL]</text>
+</body>
+
+</html>

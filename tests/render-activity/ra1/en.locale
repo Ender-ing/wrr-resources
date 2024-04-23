@@ -1,0 +1,6 @@
+{
+    "test": "This is a test!",
+    "welcome": "Welcome, $1!",
+    "welcome2": "Welcome to $1, $2!",
+    "welcome3": "Welcome to $1, $2 ($3)!"
+}
