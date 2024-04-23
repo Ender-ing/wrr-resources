@@ -1,12 +1,1 @@
-/* layouts style */
-
-
-.x-root-class {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    display: block;
-    width: 100%;
-    min-height: 100%;
-    overflow-x: hidden;
-}
+.x-root-class{position:absolute;top:0;left:0;display:block;width:100%;min-height:100%;overflow-x:hidden}
