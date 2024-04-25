@@ -28,6 +28,7 @@
         }
     },
     "_meta": {
-        "description": "Welcome to ender.ing!"
+        "title": "Ender.ing",
+        "description": "Welcome to Ender.ing!"
     }
 }

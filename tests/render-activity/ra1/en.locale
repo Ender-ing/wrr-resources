@@ -4,6 +4,7 @@
     "welcome2": "Welcome to $1, $2!",
     "welcome3": "Welcome to $1, $2 ($3)!",
     "_meta": {
+        "title": "Render Activity | Ender.ing",
         "description": "Welcome to the 'Render Activity' test page!"
     }
 }
