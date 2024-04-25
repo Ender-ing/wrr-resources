@@ -37,6 +37,8 @@
     <h4>{{welcome2}[`SERVICE`, `USERNAME`]}</h4>
     <h4>{{welcome3}[`SERVICE`, `NAME`, `USERNAME`]}</h4>
     <h4>{{welcome3}[`SERVICE`, test, $action.ok]}</h4>
+    <h4>{{?_meta.description}}</h4>
+    <h4>{{welcome3}[_meta.description, $_meta.description, ?_meta.description]}</h4>
     <form id="lang-form">
         <radio id="cats-radio-" name="lang" value="en"/>
         <label for="cats-radio-">{{$language.english}}</label>

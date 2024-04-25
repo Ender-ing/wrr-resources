@@ -26,5 +26,8 @@
             "title": "Content not Available!",
             "message": "The page you're trying to access is not available! Please try again later..."
         }
+    },
+    "_meta": {
+        "description": "Welcome to ender.ing!"
     }
 }
