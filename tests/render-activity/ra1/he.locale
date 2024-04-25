@@ -4,7 +4,7 @@
     "welcome2": "ברוך הבא ל-$1, $2!",
     "welcome3": "ברוך הבא ל-$1, $2 ($3)!",
     "_meta": {
-        "title": "Render Activity | Ender.ing",
+        "title": "Render Activity",
         "description": "ברוכים הבאים לדף הבדיקה של 'Render Activity'!"
     }
 }
