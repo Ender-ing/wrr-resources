@@ -7,9 +7,9 @@
     <text-button id="status-button">{{$redirect.check_status}}</text-button>
     <script>
         document.getElementById("back-button").onclick = function(){
-            history.go(-1);
+            window.location.reload();
         };
-        document.getElementById("back-button").onclick = function(){
+        document.getElementById("status-button").onclick = function(){
             window.open(window.LINKS.SERVER_STATUS);
         };
     </script>
