@@ -9,7 +9,8 @@
     },
     "redirect": {
         "back": "תחזור",
-        "reload": "טען מחדש"
+        "reload": "טען מחדש",
+        "check_status": "לבדוק מצב"
     },
     "action": {
         "ok": "אוקיי",

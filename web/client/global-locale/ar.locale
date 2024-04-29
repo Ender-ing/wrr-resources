@@ -9,7 +9,8 @@
     },
     "redirect": {
         "back": "العودة",
-        "reload": "اعادة تحميل"
+        "reload": "اعادة تحميل",
+        "check_status": "تحقق من حالة"
     },
     "action": {
         "ok": "حسنا",

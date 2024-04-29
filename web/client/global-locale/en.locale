@@ -9,7 +9,8 @@
     },
     "redirect": {
         "back": "Go Back",
-        "reload": "Reload"
+        "reload": "Reload",
+        "check_status": "Check Status"
     },
     "action": {
         "ok": "Ok",
