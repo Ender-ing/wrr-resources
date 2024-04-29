@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<x-root>
+    <h2>{{title}}</h2>
+    <divider/>
+    <text-button id="reload-button">{{$redirect.reload}}</text-button>
+    <text-button id="back-button">{{$redirect.back}}</text-button>
+    <script>
+        document.getElementById("reload-button").onclick = function(){
+            window.location.reload();
+        };
+        document.getElementById("back-button").onclick = function(){
+            history.go(-1);
+        };
+    </script>
+</x-root>

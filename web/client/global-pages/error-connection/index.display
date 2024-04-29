@@ -3,10 +3,10 @@
 <x-root>
     <h2>{{title}}</h2>
     <divider/>
-    <text-button id="back-button">{{$redirect.reload}}</text-button>
+    <text-button id="reload-button">{{$redirect.reload}}</text-button>
     <text-button id="status-button">{{$redirect.check_status}}</text-button>
     <script>
-        document.getElementById("back-button").onclick = function(){
+        document.getElementById("reload-button").onclick = function(){
             window.location.reload();
         };
         document.getElementById("status-button").onclick = function(){
