@@ -5,6 +5,9 @@
     },
     "version": "0.0.0",
     "web": {
-        "host": "resources.ender.ing"
+        "host": "resources.ender.ing",
+        "sitemap": {
+            "ignore": ["client"]
+        }
     }
 }
