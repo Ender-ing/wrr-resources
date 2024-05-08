@@ -1,8 +1,12 @@
-<x-root>
-    <h2>{{title}}</h2>
-    <divider/>
-    <text-button id="reload-button">{{$redirect.reload}}</text-button>
-    <text-button id="back-button">{{$redirect.back}}</text-button>
+<x-layout view="collapse">
+    <div slot="group">
+        <x-pane view="full">
+            <h2>{{title}}</h2>
+            <divider/>
+            <text-button id="reload-button">{{$redirect.reload}}</text-button>
+            <text-button id="back-button">{{$redirect.back}}</text-button>
+        </x-pane>
+    </div>
     <script>
         document.getElementById("reload-button").onclick = function(){
             window.location.reload();
@@ -11,4 +15,4 @@
             history.go(-1);
         };
     </script>
-</x-root>
+</x-layout>

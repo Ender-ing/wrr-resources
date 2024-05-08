@@ -1,10 +1,14 @@
-<x-root>
-    <h2>{{$error.title}}</h2>
-    <divider/>
-    <text-button id="back-button">{{$redirect.back}}</text-button>
+<x-layout view="collapse">
+    <div slot="group">
+        <x-pane view="full">
+            <h2>{{$error.title}}</h2>
+            <divider/>
+            <text-button id="back-button">{{$redirect.back}}</text-button>
+        </x-pane>
+    </div>
     <script>
         document.getElementById("back-button").onclick = function(){
             history.go(-1);
         };
     </script>
-</x-root>
+</x-layout>
