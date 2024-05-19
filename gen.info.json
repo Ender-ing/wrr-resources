@@ -3,7 +3,6 @@
         "long": "Ender Resources",
         "short": "Resources"
     },
-    "version": "@@version",
     "web": {
         "host": "resources.ender.ing",
         "sitemap": {
