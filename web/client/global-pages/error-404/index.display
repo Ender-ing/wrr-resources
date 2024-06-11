@@ -1,4 +1,4 @@
-<x-layout view="collapse">
+<x-layout>
     <div slot="group">
         <x-pane view="full">
             <h2>{{title}}</h2>
