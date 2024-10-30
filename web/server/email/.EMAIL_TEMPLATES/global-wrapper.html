@@ -1,0 +1,83 @@
+<!-- use this tool to make sure everything works fine on mail clients: https://templates.mailchimp.com/resources/inline-css/ -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Display:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+        @font-face {
+            font-family: "SansFallback";
+            src: local("Noto Sans"),
+                local("Arial"),
+                local("Helvetica"),
+                local("sans-serif");
+        }
+
+        :root {
+            --message-width: 500px;
+            --message-height: 300px;
+        }
+
+        .content {
+            display: flex;
+            font-size: 16px;
+            text-align: center;
+            width: fit-content;
+            height: fit-content;
+            padding: 12px 12px;
+            border: solid 1px black;
+            margin: 12px auto;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            width: var(--message-width);
+            min-height: var(--message-height);
+        }
+
+        .title {
+            font-family: "Noto Sans Display", "SansFallBack";
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .text {
+            font-family: "Noto Sans", "SansFallBack";
+            font-size: 16px;
+            font-weight: normal;
+        }
+
+        .footer {
+            text-align: center;
+            margin: 10px auto;
+            font-size: 12px;
+            font-family: "Noto Sans", "SansFallBack";
+            opacity: .8;
+            width: var(--message-width);
+        }
+
+        .footer p {
+            display: block;
+            margin: 4px auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <p class="title">Hello there!</p>
+        <p class="text">MESSAGE CONTENT!</p>
+    </div>
+    <footer class="footer">
+        <p>This message has been sent through <b><a href="https://ender.ing/" target="_blank">ender.ing</a></b>!</p>
+        <p>To manage your email preferences, you can visit your <a
+                href="https://links.ender.ing/account/email-preferences" target="_blank">Account Console</a>.</p>
+        <p>If you suspect abuse of our mailing system, please contact us at <a href="mailto:abuse@ender.ing"
+                target="_blank">abuse@ender.ing</a></p>
+    </footer>
+</body>
+
+</html>
