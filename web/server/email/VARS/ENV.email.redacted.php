@@ -5,8 +5,8 @@
 // system@ender.ing
 global $__SMTP_SYSTEM_SERVER__, $__SMTP_SYSTEM_APP_PASSWORD__, $__SMTP_SYSTEM_ADDRESS__, $__SMTP_SYSTEM_NAME__;
 
-$__SMTP_SYSTEM_SERVER__ = "mx.example.net";
-$__SMTP_SYSTEM_APP_PASSWORD__ = 'XXXXXXXXXXXXXXXX';
+$__SMTP_SYSTEM_SERVER__ = "SMTP-SERVER-HOST"; // this isn't really a secret..
+$__SMTP_SYSTEM_APP_PASSWORD__ = 'SMTP-SERVER-PASSWORD';
 $__SMTP_SYSTEM_ADDRESS__ = 'do-not-reply@ender.ing';
 $__SMTP_SYSTEM_NAME__ = 'Ender (ender.ing)';
 
