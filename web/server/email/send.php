@@ -55,10 +55,7 @@ function __SYSTEM_send_mail__($to_address, $to_name, $subject, $HTMLBody = ""){
         $__SYSTEM_MAIL__->addCustomHeader('Language', 'en'); // Email language (support English, Hebrew, and Arabic!)
         $__SYSTEM_MAIL__->addCustomHeader('MT-Priority', '1'); // Set this email as urgent (only urgent emails will be delivered!)
         $__SYSTEM_MAIL__->addCustomHeader('Organization', 'Ender (ender.ing)');
-        $__SYSTEM_MAIL__->addCustomHeader('X-Ender-Mail-Client', '0'); // Always include this header to indicate the version of the web client
-        $__SYSTEM_MAIL__->addCustomHeader('X-Ender-Mail-Signature', '0'); // Use this header to show trusted services as verified in the mail client! (only allow signature of certificates signed by Ender CA)
         $__SYSTEM_MAIL__->addCustomHeader('X-Ender-Mail-Anti-Abuse', 'Please contact us at abuse@ender.ing if you suspect ongoing suspicious activity!'); // Use this header to track ALL mail sent from the web mail client
-        $__SYSTEM_MAIL__->addCustomHeader('X-Ender-Mail-Anti-Abuse', '0'); // Use this header to track ALL mail sent from the web mail client
     
         $__SYSTEM_MAIL__->send();
 
